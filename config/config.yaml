@@ -1,0 +1,25 @@
+
+
+# List of triggers
+triggers:
+  - type: email
+    imap_server: "imap.gmail.com"
+    username: "user@example.com"
+    password: "securepassword"
+    mailbox: "INBOX"
+    interval: 30  # Check every 30 seconds
+  - type: webhook
+    path: "/api/webhook"
+  - type: schedule
+    interval: 60
+  - type: HelloWorld
+    interval: 60
+# end triggers
+
+
+# List of credentials
+credentials:
+  smtp_user: "user@example.com"
+  smtp_pass: "securepassword"
+  webhook_secret: "my_secret_key"
+# end credentials
